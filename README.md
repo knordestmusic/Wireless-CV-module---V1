@@ -19,19 +19,19 @@ The project's code is written in Arduino C/C++ and takes advantage of libraries 
 
 ![Figure 1: Receiver Module Schematic](images/receiver-schematic.png)
 
-Fig 1 - Receiver Module Schematic
+Image 1 - Receiver Module Schematic
 
 ![Figure 2: Sender Module Schematic](images/sender-schematic.png)
 
-Fig 2 - Sender Module Schematic
+Image 2 - Sender Module Schematic
 
 ![Figure 3: Receiver Module](images/receiver-module.png)
 
-Fig 1 - Receiver Module 
+Image 3 - Receiver Module 
 
 ![Figure 4: Sender Module](images/sender-module.png)
 
-Fig 1 - Sender Module 
+Image 4 - Sender Module 
 
 ## CHALLENGES AND WORK NEEDED
 
@@ -39,7 +39,6 @@ Fig 1 - Sender Module
 
 2) Since there is only one pair of I²C communication pins (SDA and SCL), the two MCP4725 DAC chips need to be set on different addresses. This can be done by desoldering the jumper and soldering the middle pad to VCC. This changes the address of the chip from 0x60 to 0x61. In this way, we can use two DAC chips at the same time.
 
-![Figure 5: MCP4725 DAC Chip](images/mcp4725-chip.png)
 
 3) The 3 dimensional array of acceleration X, acceleration Y and an enable flag of '1' needs to be packed in a CSV string of the form (accX, accY, 1). This string is sent in packets to the receiver module and decoded by the receiver module. This was beyond my technical knowledge and I had to read a lot of forums in order to understand and execute it.
 
