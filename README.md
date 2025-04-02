@@ -17,21 +17,21 @@ On the receiver module, a WiFi server is initiated to listen for incoming sensor
 
 The project's code is written in Arduino C/C++ and takes advantage of libraries such as the ESP8266WiFi library for wireless connectivity, the Adafruit_MPU6050 library for sensor interfacing, and the Adafruit_MCP4725 library for controlling the DAC chips.
 
-![Figure 1: Receiver Module Schematic](Figure1_ReceiverModuleSchematic.png)
+![Figure 1: Receiver Module Schematic](images/receiver-schematic.png)
 
-![Figure 2: Sender Module Schematic](Figure2_SenderModuleSchematic.png)
+![Figure 2: Sender Module Schematic](images/sender-schematic.png)
 
-![Figure 3: Receiver Module](Figure3_ReceiverModule.png)
+![Figure 3: Receiver Module](images/receiver-module.png)
 
-![Figure 4: Sender Module](Figure4_SenderModule.png)
+![Figure 4: Sender Module](images/sender-module.png)
 
-## CHALLENGES + WORK NEEDED
+## CHALLENGES AND WORK NEEDED
 
 1) REASON FOR USING ONLY ONE SENSOR (instead of 3 as required by the assignment) - Since I had the constraint of only two DACs, I could not utilize more than two sensor values (here I have chosen X and Y tilt values from the accelerometer). This also constrained me to use either two sensors, or one sensor with two value outputs. And since using two different sensors would mean engaging two hands, or changing of hands, or putting down the sender module to interact with two different sensors, I chose to use one sensor that could send two values at the same time.
 
 2) Since there is only one pair of I²C communication pins (SDA and SCL), the two MCP4725 DAC chips need to be set on different addresses. This can be done by desoldering the jumper and soldering the middle pad to VCC. This changes the address of the chip from 0x60 to 0x61. In this way, we can use two DAC chips at the same time.
 
-![Figure 5: MCP4725 DAC Chip](Figure5_MCP4725DACChip.png)
+![Figure 5: MCP4725 DAC Chip](images/mcp4725-chip.png)
 
 3) The 3 dimensional array of acceleration X, acceleration Y and an enable flag of '1' needs to be packed in a CSV string of the form (accX, accY, 1). This string is sent in packets to the receiver module and decoded by the receiver module. This was beyond my technical knowledge and I had to read a lot of forums in order to understand and execute it.
 
