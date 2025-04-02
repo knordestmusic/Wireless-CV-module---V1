@@ -17,11 +17,11 @@ On the receiver module, a WiFi server is initiated to listen for incoming sensor
 
 The project's code is written in Arduino C/C++ and takes advantage of libraries such as the ESP8266WiFi library for wireless connectivity, the Adafruit_MPU6050 library for sensor interfacing, and the Adafruit_MCP4725 library for controlling the DAC chips.
 
-![Figure 1: Receiver Module Schematic](images/receiver-schematic.png)
+![Figure 1: Receiver Module Schematic](images/Receiver Module Schematic.png)
 
 ![Figure 2: Sender Module Schematic](images/sender-schematic.png)
 
-![Figure 3: Receiver Module](images/receiver-module.png)
+![Figure 3: Receiver Module](images/Sender Module Schematic.png)
 
 ![Figure 4: Sender Module](images/sender-module.png)
 
