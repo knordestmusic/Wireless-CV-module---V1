@@ -19,11 +19,19 @@ The project's code is written in Arduino C/C++ and takes advantage of libraries 
 
 ![Figure 1: Receiver Module Schematic](images/receiver-schematic.png)
 
-![Figure 2: Sender Module Schematic](images/sender-schematic.png)
+Fig 1 - Receiver Module Schematic
 
 ![Figure 2: Sender Module Schematic](images/sender-schematic.png)
+
+Fig 2 - Sender Module Schematic
+
+![Figure 3: Receiver Module](images/receiver-module.png)
+
+Fig 1 - Receiver Module 
 
 ![Figure 4: Sender Module](images/sender-module.png)
+
+Fig 1 - Sender Module 
 
 ## CHALLENGES AND WORK NEEDED
 
