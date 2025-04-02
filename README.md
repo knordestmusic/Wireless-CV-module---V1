@@ -21,7 +21,7 @@ The project's code is written in Arduino C/C++ and takes advantage of libraries 
 
 ![Figure 2: Sender Module Schematic](images/sender-schematic.png)
 
-![Figure 3: Receiver Module](images/Sender Module Schematic.png)
+![Figure 2: Sender Module Schematic](images/sender-schematic.png)
 
 ![Figure 4: Sender Module](images/sender-module.png)
 
