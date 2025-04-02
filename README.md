@@ -1,9 +1,6 @@
 # Wireless-CV-module - V1
 Wireless CV over network for Eurorack Synth
 
-# WIRELESS CV MODULE
-Ishaan Jagyasi
-
 ## INTRODUCTION
 
 This project is a wireless control voltage (CV) module made for eurorack format synthesizers/voltage processing modules that uses tilt gestures to modulate sound. It comprises two separate Adafruit Feather HUZZAH ESP8266 modules that communicate over WiFi. One module (the sender) houses an MPU6050 accelerometer, which captures tilt data (i.e., the sensor's orientation in space). This tilt data is then transmitted wirelessly to the receiver module. The receiver processes the tilt information, scales it to a normalized range (0-4095), and uses two MCP4725 digital-to-analog converters (DACs) to output control voltages. These voltages can interface with analog synthesizers or modular systems, thus translating physical movements into sonic modulation.
